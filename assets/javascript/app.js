@@ -45,7 +45,7 @@ $(document).ready(function(){
         var checkQ5 = $("input[name='q5']:checked").val();
 
         var u_choice = [checkQ1,checkQ2,checkQ3,checkQ4,checkQ5];
-        var right_ans = ["d","c","b","d","a"];
+        var right_ans = ["d","c","c","d","a"];
 
         for(var i=0;i<u_choice.length;i++){
             if(u_choice[i]===right_ans[i]){
