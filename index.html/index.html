@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Triva Game</title>
+	<!-- CSS Files -->
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+	<header id="masthead">
+		<div class="container">
+			<h1>Guess Who!</h1>
+		</div>
+	</header>
+	<div id="main-container" class="container">
+		<section class="main-section">
+			<h1 class="rules">Da Rules</h1>
+			<p class="rules">There are 5 questions, you have 60 seconds to answer them all.</p>
+			
+			<!-- timer will be displayed in div#show-number-->
+			<div id="show-number"></div>
+
+			<div id="que">
+					<h2>
+							<button type="button" id="start-button">Start</button>
+						</h2>
+				<p>Time Left: <label id="t_left">60</label></p>
+			<!-- question 1 -->
+			<p class="question">1. Whom did Thanos kill to get the soul stone?</p>
+			<ul class="answers">
+			<input type="radio" name="q1" value="a" id="q1a"><label for="q1a">Tony Stark</label><br/>
+			<input type="radio" name="q1" value="b" id="q1b"><label for="q1b">Banner</label><br/>
+			<input type="radio" name="q1" value="c" id="q1c"><label for="q1c">Peter Quill</label><br/>
+			<input type="radio" name="q1" value="d" id="q1d"><label for="q1d">Gimora</label><br/>
+			</ul>
+			<!-- question 2 -->
+			<p class="question">2. How many band member are in the group BTS?</p>
+			<ul class="answers">
+			<input type="radio" name="q2" value="a" id="q2a"><label for="q2a">5</label><br/>
+			<input type="radio" name="q2" value="b" id="q2b"><label for="q2b">9</label><br/>
+			<input type="radio" name="q2" value="c" id="q2c"><label for="q2c">7</label><br/>
+			<input type="radio" name="q2" value="d" id="q2d"><label for="q2d">3</label><br/>
+			</ul>
+			<!-- question 3 -->
+			<p class="question">3. What color Hulk is General Ross?</p>
+			<ul class="answers">
+			<input type="radio" name="q3" value="a" id="q3a"><label for="q3a">Pastey Grey</label><br/>
+			<input type="radio" name="q3" value="b" id="q3b"><label for="q3b">Red</label><br/>
+			<input type="radio" name="q3" value="c" id="q3c"><label for="q3c">Green</label><br/>
+			<input type="radio" name="q3" value="d" id="q3d"><label for="q3d">Dark Grey</label><br/>
+			</ul>
+			<!-- question 4 -->
+			<p class="question">4. Whom was Victor Freeze trying to save which made him require his suit?</p>
+			<ul class="answers">
+			<input type="radio" name="q4" value="a" id="q4a"><label for="q4a">Son</label><br/>
+			<input type="radio" name="q4" value="b" id="q4b"><label for="q4b">Mother</label><br/>
+			<input type="radio" name="q4" value="c" id="q4c"><label for="q4c">Daughter</label><br/>
+			<input type="radio" name="q4" value="d" id="q4d"><label for="q4d">Wife</label><br/>
+			</ul>
+			<!-- question 5 -->
+			<p class="question">5. Where did the villian Onslaught come from?</p>
+			<ul class="answers">
+			<input type="radio" name="q5" value="a" id="q5a"><label for="q5a">Professor X's mind</label><br/>
+			<input type="radio" name="q5" value="b" id="q5b"><label for="q5b">Planet Xenon</label><br/>
+			<input type="radio" name="q5" value="c" id="q5c"><label for="q5c"> Planet Knowhere</label><br/>
+			<input type="radio" name="q5" value="d" id="q5d"><label for="q5d">Asteroid M</label><br/>
+			</ul>
+
+			<button type="button" id="submit">Submit Final Answers</button>
+		</div>
+			<!-- Hidden Buttons and Elements -->
+			<!-- Submit Button -->
+		
+			<!-- Results -->
+			<div id="results">
+			Show me the answers!
+			<p>Correct Answer: <label id="ca"></label></p>
+			<p>Wront Answers: <label id="wa"></label></p>
+
+				<button type="button" id="restart">Play Again</button><!-- <div id="category1">
+				<p><strong>Question 1:</strong> The correct answer is the <strong>Answer 1</strong>.</p>
+				</div> -->
+			</div>
+			
+		</section>
+	</div>
+	<footer id="footer" class="site-footer">
+	
+	</footer>
+	<!-- JavaScript File & jQuery Lib -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+	<script type="text/javascript" src="../assets/javascript/app.js"></script>
+	<script type="text/javascript" src="/js/questions.js"></script>
+</body>
+</html>
